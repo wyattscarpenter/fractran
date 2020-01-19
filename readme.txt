@@ -1,0 +1,1 @@
+A simple implementation of John Conway's FRACTRAN https://en.wikipedia.org/wiki/FRACTRAN
