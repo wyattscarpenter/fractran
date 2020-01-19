@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc fractran.c -o fractran && ./fractran; echo $?  
