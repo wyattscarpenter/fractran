@@ -1,13 +1,25 @@
-typedef struct {int n; int d;} frac; //numerator and denominator
-frac fracs[] = {(const frac){3,2}}; //simple fractran program that adds two numbers (in an archane way), as documented on the wikipedia pag
-int n = 6;
+#include <stdio.h>
+#include <ctype.h>
+int d[1000]; //arbitrary limit
+int i = 0;
+int wasdigit = 0;
+char c;
 int main(void){
-	for(int i = 0; i < sizeof(fracs)/sizeof(frac); i++){
-		frac f = fracs[i];
-		if(n*f.n%f.d == 0){
-			n = n*f.n/f.d;
-			i = 0;
+	while ( (c = getchar()) != EOF){ //parse fractran file (hard part)
+		if(isdigit(c)){
+			d[i] = d[i]*10+c-'0';
+			wasdigit=1;
+		}else if(wasdigit){
+			i++;
+			wasdigit=0;
+		}
+		
+	}
+	for(int j = 1; j < i; j+=2){ //run fractran algorithm
+		if(d[0]*d[j]%d[j+1] == 0){
+			d[0] = d[0]*d[j]/d[j+1];
+			j = 1;
 		}
 	}
-	return n;
+	return d[0];
 }
