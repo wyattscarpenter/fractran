@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc fractran.c -o fractran && ./fractran < adder.fractran; echo $?  
+gcc fractran.c -o fractran && ./fractran < adder.fractran

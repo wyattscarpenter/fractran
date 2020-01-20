@@ -1,2 +1,3 @@
-6, 3/2 #short program that adds the exponents of two and three in the prime factorization of the number, and turns the sum into the exponent of three
+72, 3/2 #short program that adds the exponents of two and three in the prime factorization of the number, and turns the sum into the exponent of three
 #by the way, these hash characters don't do anything, but anything that isn't a digit is ignored.
+#here we expect the answer of three to the five ie two hundred forty three
