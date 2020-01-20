@@ -1,6 +1,6 @@
 A simple implementation of John Conway's FRACTRAN https://en.wikipedia.org/wiki/FRACTRAN
 
-Compile frantran.c (using make or otherwise) and then pipe your programs into the resultant executable. It will print the result out to standard out.
+Compile frantran.c (using make or otherwise) and then pipe your programs (including the leading input integer) into the resultant executable. It will print the result out to standard out.
 
 Programs are a list of digits, which represent numbers in the conventional indo-arabic base 10 way. The first group of digits represents the initial value of n. The second digit group is the numerator of the first fraction, the third digit group is the denominator of the first fraction, the fourth digit group is the numerator of the second fraction, and so on. Digits are separated and/or surrounded by non-digit characters, which otherwise are ignored and may thus be used as comments.
 
